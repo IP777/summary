@@ -1,19 +1,122 @@
 .bottom_block_wrapper {
   margin: 0 auto;
   width: 1024px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   margin-bottom: 20px;
   background-color: $color-brown;
 }
+
+// .bottom_block_wrapper:hover {
+//   background-color: #fff;
+//   color: $hover-link-color-2;
+// }
 
 .resume_link {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  font-size: 15pt;
+  font-size: 14pt;
+  font-weight: 400;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .resume_link:hover {
+  background-color: #fff;
+  color: $hover-link-color-2;
+  outline: 1px solid $color-gray;
+}
+
+/* Секция контакты */
+.second_section {
+  padding-top: 5px;
+  background-color: #fff;
+  background-size: contain;
+  padding-top: 25px;
+  padding-bottom: 14px;
+}
+
+.headline_first_s_s {
+  color: $color-gray;
+  text-align: center;
+  margin-bottom: 13pt;
+}
+
+form {
+  text-align: center;
+}
+
+.form_wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.input_group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+textarea[name='Message'] {
+  display: block;
+  width: 455px;
+  height: 75px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-family: $main-text;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 7px;
+  resize: none;
+}
+
+textarea:invalid {
+  outline: 1px solid#fdd;
+}
+
+// textarea:valid {
+//   outline: 2px solid#dfd;
+// }
+
+input:not([type='submit']) {
+  display: block;
+  width: 455px;
+  height: 30px;
+  border: 1px solid $color-gray;
+  border-radius: 3px;
+  font-family: $main-text;
+  font-size: 16px;
+  color: $color-gray;
+  padding-left: 10px;
+}
+
+input[name='Name']:invalid,
+input[name='email']:invalid,
+textarea[name='Message']:invalid {
+  outline: 1px solid rgb(218, 93, 93);
+}
+
+// input[name='Name']:valid,
+// input[name='email']:valid,
+// textarea[name='Message']:valid {
+//   border: 1px solid rgb(74, 241, 74);
+// }
+
+input[type='submit'] {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0);
+  color: $color-gray;
+  font-family: $main-text;
+  font-weight: 400;
+  font-size: 10pt;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
   color: $hover-link-color;
+  font-weight: bold;
 }
