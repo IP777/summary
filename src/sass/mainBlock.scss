@@ -1,0 +1,42 @@
+.central_block {
+  display: block;
+  margin-left: 30px;
+  width: 640px;
+}
+
+.head_text {
+  font-size: 33pt;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.prof_text {
+  font-size: 16pt;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.mainBlock_hr {
+  border: 1px solid rgb(214, 214, 214);
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+.aboutMe {
+  font-size: 12pt;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+  width: 620px;
+}
+.projectExample {
+  .header_pe {
+    font-size: 15pt;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+
+  .project_wrapper {
+    margin-bottom: 30px;
+  }
+}

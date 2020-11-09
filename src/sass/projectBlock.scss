@@ -1,0 +1,42 @@
+.projectBlock {
+  margin-bottom: 20px;
+}
+
+.projectBlock_header {
+  font-size: 13pt;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.project_item {
+  margin-bottom: 10px;
+  font-size: 12pt;
+  font-weight: 400;
+
+  p {
+    margin-left: 15px;
+    font-weight: 500;
+  }
+
+  ul {
+    margin-left: 15px;
+  }
+}
+
+.project_sub_item {
+  p {
+    color: $color-gray;
+    font-weight: 400;
+
+    a {
+      display: inline;
+      font-weight: 500;
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: rgb(146, 50, 50);
+    }
+  }
+}

@@ -42,10 +42,11 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-rigger": "^0.5.8",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
+    "node-sass": "^5.0.0",
     "require-dir": "^1.2.0",
     "usedcss": "^1.0.7"
   }
