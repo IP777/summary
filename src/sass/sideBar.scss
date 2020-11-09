@@ -45,7 +45,7 @@
 .profil::before {
   display: block;
   position: absolute;
-  scale: 0.5;
+  transform: scale(0.5);
   left: -63px;
   top: -20px;
 }
