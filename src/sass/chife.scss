@@ -1,0 +1,9 @@
+$main-text: Arial, sans-serif;
+
+.main_block {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+  background: url(../assets/images/bg-pattern.png);
+  box-shadow: 5px 5px 20px rgb(107, 107, 107);
+}

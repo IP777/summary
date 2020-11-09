@@ -1,0 +1,47 @@
+.side_bar {
+  background-color: #45413f;
+  width: 350px;
+  color: #fff;
+}
+
+.side_bar {
+  padding-left: 26px;
+  padding-bottom: 70px;
+  padding-top: 50px;
+}
+
+.avatar_img {
+  display: block;
+  margin: 0 auto;
+  width: 220px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 40px;
+}
+
+.side_block {
+  margin-bottom: 60px;
+}
+
+.block_main_text {
+  font-size: 15pt;
+  font-family: $main-text;
+  margin-bottom: 12px;
+}
+
+.side_block_info,
+.skill_items {
+  font-size: 12pt;
+  font-family: $main-text;
+  margin-bottom: 8px;
+}
+
+.profil {
+  margin-left: 30px;
+}
+
+// .github::before {
+//   content: url(../assets/images/GitHub-Mark-64px.png);
+//   display: inline-block;
+//   scale: 0.5;
+// }
