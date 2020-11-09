@@ -2,9 +2,19 @@
   display: block;
 
   h3 {
+    position: relative;
     font-size: 15pt;
     font-weight: 400;
     margin-bottom: 7px;
+  }
+
+  h3::after {
+    content: '';
+    border: $hr;
+    width: 420px;
+    position: absolute;
+    left: 200px;
+    top: 12px;
   }
 
   ul {

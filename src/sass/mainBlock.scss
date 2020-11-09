@@ -17,7 +17,7 @@
 }
 
 .mainBlock_hr {
-  border: 1px solid rgb(214, 214, 214);
+  border: $hr;
   margin-bottom: 15px;
   margin-right: 20px;
 }
@@ -31,9 +31,19 @@
 }
 .projectExample {
   .header_pe {
+    position: relative;
     font-size: 15pt;
     font-weight: 400;
     margin-bottom: 4px;
+  }
+
+  .header_pe::after {
+    content: '';
+    border: $hr;
+    width: 420px;
+    position: absolute;
+    left: 200px;
+    top: 12px;
   }
 
   .project_wrapper {

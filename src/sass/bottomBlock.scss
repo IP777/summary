@@ -1,0 +1,19 @@
+.bottom_block_wrapper {
+  margin: 0 auto;
+  width: 1024px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: $color-brown;
+}
+
+.resume_link {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15pt;
+}
+
+.resume_link:hover {
+  color: $hover-link-color;
+}

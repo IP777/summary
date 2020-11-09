@@ -1,10 +1,16 @@
 $main-text: Arial, sans-serif;
 $color-gray: #615d5b;
+$hr: 1px solid rgb(214, 214, 214);
+$color-brown: #45413f;
+$hover-link-color: rgb(146, 50, 50);
+
+.main {
+  box-shadow: 5px 5px 20px rgb(107, 107, 107);
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 
 .main_block {
   display: flex;
-  margin: 0 auto;
-  max-width: 1024px;
-  background: url(../assets/images/bg-pattern.png);
-  box-shadow: 5px 5px 20px rgb(107, 107, 107);
 }

@@ -1,12 +1,12 @@
 .side_bar {
-  background-color: #45413f;
+  background-color: $color-brown;
   width: 350px;
   color: #fff;
 }
 
 .side_bar {
-  padding-left: 26px;
-  padding-bottom: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-top: 33px;
 }
 
@@ -20,11 +20,11 @@
 }
 
 .side_block {
-  margin-bottom: 45px;
+  margin-bottom: 29px;
 }
 
 .block_main_text {
-  font-size: 15pt;
+  font-size: 17pt;
   font-family: $main-text;
   margin-bottom: 12px;
 }
@@ -37,11 +37,27 @@
 }
 
 .profil {
-  margin-left: 30px;
+  margin-left: 45px;
+  position: relative;
+  line-height: 35px;
 }
 
-// .github::before {
-//   content: url(../assets/images/GitHub-Mark-64px.png);
-//   display: inline-block;
-//   scale: 0.5;
-// }
+.profil::before {
+  display: block;
+  position: absolute;
+  scale: 0.5;
+  left: -63px;
+  top: -20px;
+}
+
+.github::before {
+  content: url(../images/GitHub-Mark-64px.png);
+}
+
+.skype::before {
+  content: url(../images/linkidin.png);
+}
+
+.facebook::before {
+  content: url(../images/facebook.png);
+}
