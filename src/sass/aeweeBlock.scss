@@ -29,7 +29,7 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: $mobile-screen) {
   .aewee_block {
     h3::after {
       width: 45%;
