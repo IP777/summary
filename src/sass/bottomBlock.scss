@@ -5,11 +5,6 @@
   background-color: $color-brown;
 }
 
-// .bottom_block_wrapper:hover {
-//   background-color: #fff;
-//   color: $hover-link-color-2;
-// }
-
 .resume_link {
   text-align: center;
   text-decoration: none;
@@ -75,10 +70,6 @@ textarea:invalid {
   outline: 1px solid#fdd;
 }
 
-// textarea:valid {
-//   outline: 2px solid#dfd;
-// }
-
 input:not([type='submit']) {
   display: block;
   width: 455px;
@@ -97,12 +88,6 @@ textarea[name='Message']:invalid {
   outline: 1px solid rgb(218, 93, 93);
 }
 
-// input[name='Name']:valid,
-// input[name='email']:valid,
-// textarea[name='Message']:valid {
-//   border: 1px solid rgb(74, 241, 74);
-// }
-
 input[type='submit'] {
   width: 100%;
   border: none;
@@ -119,4 +104,19 @@ input[type='submit'] {
 input[type='submit']:hover {
   color: $hover-link-color;
   font-weight: bold;
+}
+
+@media only screen and (max-width: $mobile-screen) {
+  .bottom_block_wrapper {
+    width: 100%;
+  }
+
+  .form_wrapper {
+    display: block;
+  }
+
+  input:not([type='submit']) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }

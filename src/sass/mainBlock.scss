@@ -29,6 +29,7 @@
   text-align: justify;
   width: 620px;
 }
+
 .projectExample {
   .header_pe {
     position: relative;
@@ -48,5 +49,41 @@
 
   .project_wrapper {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: $mobile-screen) {
+  .central_block {
+    width: 100%;
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .head_text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 1px;
+    left: 5px;
+    color: #fff;
+  }
+
+  .prof_text {
+    margin-top: 20px;
+  }
+
+  .aboutMe {
+    width: 100%;
+  }
+
+  .mainBlock_hr {
+    margin-right: 0;
+  }
+
+  .projectExample {
+    .header_pe::after {
+      width: 45%;
+    }
   }
 }

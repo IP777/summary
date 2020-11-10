@@ -4,14 +4,27 @@ $hr: 1px solid rgb(214, 214, 214);
 $color-brown: #45413f;
 $hover-link-color: rgb(146, 50, 50);
 $hover-link-color-2: rgb(114, 89, 89);
+$mobile-screen: 500px;
 
 .main {
   box-shadow: 5px 5px 20px rgb(107, 107, 107);
-  max-width: 1024px;
+  width: 1024px;
   margin: 0 auto;
   margin-top: 20px;
 }
 
 .main_block {
   display: flex;
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    width: 100%;
+    box-shadow: none;
+    margin: 0 auto;
+  }
+
+  .main_block {
+    flex-wrap: wrap;
+  }
 }

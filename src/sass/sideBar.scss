@@ -2,9 +2,6 @@
   background-color: $color-brown;
   width: 350px;
   color: #fff;
-}
-
-.side_bar {
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 33px;
@@ -60,4 +57,20 @@
 
 .facebook::before {
   content: url(../images/facebook.png);
+}
+
+@media only screen and (max-width: $mobile-screen) {
+  .side_bar {
+    width: 100vh;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .profil {
+    margin-left: 0;
+  }
+
+  .profil::before {
+    left: -20px;
+  }
 }

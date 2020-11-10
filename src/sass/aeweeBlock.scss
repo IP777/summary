@@ -28,3 +28,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .aewee_block {
+    h3::after {
+      width: 45%;
+    }
+  }
+}
