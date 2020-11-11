@@ -13,18 +13,29 @@
     <form action="#" method="POST" class="container">
       <div class="form_wrapper">
         <div class="input_group">
-          <input name="Name" type="text" placeholder="Your Name *" />
-          <input name="email" type="email" placeholder="Your Email *" />
+          <input
+            id="input_name"
+            name="Name"
+            type="text"
+            placeholder="Your Name *"
+          />
+          <input
+            id="input_email"
+            name="email"
+            type="email"
+            placeholder="Your Email *"
+          />
           <!-- <input name="Subject" type="text" placeholder="Subject" /> -->
         </div>
         <textarea
+          id="textMessage"
           name="Message"
           cols="30"
           rows="10"
           placeholder="Your Message *"
         ></textarea>
       </div>
-      <input type="submit" value="Send Message" />
+      <input id="submit_btn" type="submit" value="Send Message" />
     </form>
   </section>
 </div>
