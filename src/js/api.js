@@ -25,6 +25,12 @@ const alertFunction = (message, status, time) => {
   }
 };
 
+const clearAllinput = () => {
+  nameInput.value = '';
+  emailInput.value = '';
+  text.value = '';
+};
+
 submitBtn.addEventListener('click', e => {
   e.preventDefault();
   //getValue();
@@ -33,6 +39,7 @@ submitBtn.addEventListener('click', e => {
 });
 
 const sendMail = userMessage => {
+  clearAllinput();
   fetch('https://murmuring-headland-47233.herokuapp.com/mail/send/piter', {
     method: 'POST',
     mode: 'cors',
