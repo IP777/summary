@@ -5,20 +5,24 @@ const text = document.querySelector('#textMessage');
 const alertWindow = document.querySelector('.alert');
 
 const alertFunction = (message, status, time) => {
-  console.log(alertWindow);
-  if (status === 'notice') {
-    alertWindow.children[2].innerHTML = 'Notice';
-    alertWindow.style.backgroundColor = '#35db00';
+  if (
+    alertWindow.style.display == 'none' ||
+    alertWindow.style.display.length == 0
+  ) {
+    if (status === 'notice') {
+      alertWindow.children[2].innerHTML = 'Notice';
+      alertWindow.style.backgroundColor = '#35db00';
+    }
+    if (status === 'warning') {
+      alertWindow.children[2].innerHTML = 'Warning';
+      alertWindow.style.backgroundColor = '#f44336';
+    }
+    alertWindow.style.display = 'block';
+    alertWindow.children[2].innerHTML = message;
+    setTimeout(() => {
+      alertWindow.style.display = 'none';
+    }, time);
   }
-  if (status === 'warning') {
-    alertWindow.children[2].innerHTML = 'Warning';
-    alertWindow.style.backgroundColor = '#f44336';
-  }
-  alertWindow.style.display = 'block';
-  alertWindow.children[2].innerHTML = message;
-  setTimeout(() => {
-    alertWindow.style.display = 'none';
-  }, time);
 };
 
 submitBtn.addEventListener('click', e => {
@@ -42,8 +46,7 @@ const sendMail = userMessage => {
 };
 
 const getValue = () => {
-  if (!(nameInput.value.length > 3)) {
-    //alert('The name must be more than 3 characters');
+  if (!(nameInput.value.length > 2)) {
     alertFunction('The name must be more than 3 characters', 'warning', 5000);
     throw new Error('The name must be more than 3 characters');
   }
