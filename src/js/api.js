@@ -33,13 +33,12 @@ const clearAllinput = () => {
 
 submitBtn.addEventListener('click', e => {
   e.preventDefault();
-  //getValue();
-  //console.log('next f');
   sendMail(getValue());
+  sendMessage(getValue());
+  clearAllinput();
 });
 
 const sendMail = userMessage => {
-  clearAllinput();
   fetch('https://murmuring-headland-47233.herokuapp.com/mail/send/piter', {
     method: 'POST',
     mode: 'cors',
@@ -49,6 +48,19 @@ const sendMail = userMessage => {
     body: JSON.stringify(userMessage),
   }).then(response => {
     console.log('Mail send status: ', response.status);
+  });
+};
+
+const sendMessage = userMessage => {
+  fetch('https://murmuring-headland-47233.herokuapp.com/telegramm/send/', {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8',
+    },
+    body: JSON.stringify(userMessage),
+  }).then(response => {
+    console.log('Message send status: ', response.status);
   });
 };
 
